@@ -1,0 +1,4 @@
+A young intelligent turtle
+That liked using Vim
+Found prgramming UNIX a hurdle
+and that's not saying much for the turtle!!!

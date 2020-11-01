@@ -1,0 +1,78 @@
+-eq
+    is equal to
+    if [ "$a" -eq "$b" ]
+
+-ne
+    is not equal to
+    if [ "$a" -ne "$b" ]
+
+-gt
+    is greater than
+    if [ "$a" -gt "$b" ]
+
+-ge
+    is greater than or equal to
+    if [ "$a" -ge "$b" ]
+
+-lt
+    is less than
+    if [ "$a" -lt "$b" ]
+
+-le
+    is than or equal to
+    if ["$a -le "$b"]
+
+<
+    is less than (within double parentheses)
+    (( "$a" < "$b" ))
+
+<=
+    is less than or equal to ( within double parentheses )
+    (( "$a" <= "$b" ))
+
+>
+    is greater than (within double parentheses)
+    (( "$a" > "$b" ))
+
+>=
+    is greater than or equal to (within double parentheses)
+    (( "$a" >= "$b" ))
+
+STRING COMPARISON
+
+=
+    is equal to
+    if [ "$a" = "$b" ]
+    Note the whitespace for framing the "="
+    if [ "$a"="$b" ]
+
+==
+    is equal to
+    This is a synonym for =
+    The == comparison operator behaves differently within a double-brackets test than within single.
+
+!=
+    is not equal to
+    if [ "$a" != "$b" ]
+
+<
+    is less than, in ASCII alphabetical order
+    if [[ "$a" < "$b" ]]
+    if [ "$a" \< "$b" ]
+        Note that the < needs to be escaped within the [] construct.
+
+>
+    is greater than, in ASCII alphabetical order
+
+    if [[ "$a" > "$b"  ]]
+    if [ "$a" \> "$b" ]
+        Note that the > needs to be escaped within the [] construct.
+
+-z
+    string is null, that is, has zero length
+
+-n
+    string is not null.
+        The -n test requires that the string be quoted within test brackets. Using an unquoted string
+        with ! -z, or even just the unquoted string alone within test brackets normally works, however
+        this is an unsafe practice. Always quote a testing string.

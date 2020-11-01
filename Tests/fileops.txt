@@ -1,0 +1,27 @@
+Returns true if...
+
+-e  file exists
+-a  file exsts but deprecated so don't use
+-f  file is a regular file
+-s  file is not zero size
+-d  file is a directory
+-b  file is a block device
+-c  file is a characer device
+-p  file is pipe
+-h  file is a symbolic link
+-L  file is a symbolic link
+-S  file is socket.
+-t  file is associated with a terminal device.
+-r  file has read permission
+-w  file has write permission
+-x  file has execute permission
+-g  set-group-id flag set on file or directory.
+-u  set-user-id flag set on file
+-k  sticky bit set
+-O  you are owner of file
+-G  group-id of file same as yours
+-N  file modified since it was last read
+f1 -nt f2   file f1 is newer than f2
+f1 -ot f2   file f1 is older than f2
+f1 -ef f2   file f1 and f2 are hard links to the same file
+! "not" -- reverse the sense of the tests above.

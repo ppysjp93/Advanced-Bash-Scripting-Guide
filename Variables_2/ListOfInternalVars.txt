@@ -1,0 +1,11 @@
+$BASH
+    The path to the Bash binary itself
+$BASH_ENV
+    An environmental variable pointing to a Bash startup file to be read
+    when a script is invoked.
+$BASH_SUBSHELL
+    A variable indicating the subshell level. This is a new addition to
+    Bash
+$BASHPID
+    Process ID of the current instance of Bash. This is not the same as
+    the $$ variable, but it often gives the same result.

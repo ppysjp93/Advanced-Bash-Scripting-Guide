@@ -1,0 +1,17 @@
+A  intelligent
+1.
+2.
+3.
+4.
+5.
+6.
+Hello there Sam
+Hello there Sam
+Hello there Sam
+Hello there Sam
+Hello there Sam
+Hello there Sam
+Hello there Sam
+This is a line with example text
+This is-a line, with special/separated/words (and some more).
+if (a == (b * c) / d)

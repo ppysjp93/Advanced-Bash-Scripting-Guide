@@ -1,0 +1,10 @@
+The declare or typeset builtins, which are exact synonyms, permit modifying the properties of variables. This is a very weak form of the typing available in certain programming languages. The declare command is specific to version 2 or later of Bash
+
+-r readonly
+-i integer
+-a array
+-f functions
+-x export
+    This declares a variable as available for exporting outside the environment of the
+    script itself
+
